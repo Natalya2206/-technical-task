@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>LevelUp</title>
+</head>
+<body>
+    <main class="content">
+        <div class="content__background-video">
+            <div class="content__title">
+                <h1>LevelUp</h1>
+            </div>
+            <div class="content__img">
+                <img class="content__img-tablets" src="img/prod.png" alt="tablets">
+            </div>
+            <div class="content__list">
+                <ul>
+                    <li>Lorem ipsum dolor</li>
+                    <li>Lorem ipsum dolor</li>
+                    <li>Lorem ipsum dolor</li>
+                </ul>
+            </div>
+            <video loop="" muted="" autoplay="" class="content__background-video-water">
+                <source src="img/background.webm" type="video/webm">
+            </video>
+        </div>
+        <button class="content__button">
+            <a href="#down">Заказать</a>
+        </button>
+
+        <div class="content__composition">
+            <div class="content__composition-left">
+                <div class="content__composition-left-ingredient">
+                    <img class="content__composition-background" src="img/packings-of-pills-and-capsules-of-medicines.jpg" alt="background">
+                </div>
+                <p>Lorem ipsum dolor</p>
+                <div class="content__composition-left-ingredient">
+                    <img class="content__composition-background" src="img/packings-of-pills-and-capsules-of-medicines.jpg" alt="background">
+                </div>
+                <p>Lorem ipsum dolor</p>
+                <div class="content__composition-left-ingredient">
+                    <img class="content__composition-background" src="img/packings-of-pills-and-capsules-of-medicines.jpg" alt="background">
+                </div>
+                <p>Lorem ipsum dolor</p>
+            </div>
+            <div class="content__composition-img">
+                <img class="content__composition-img-tablets" src="img/prod.png" alt="tablets">
+            </div>
+            <div class="content__composition-right">
+                <div class="content__composition-right-ingredient">
+                    <img class="content__composition-background" src="img/packings-of-pills-and-capsules-of-medicines.jpg" alt="background">
+                </div>
+                <p>Lorem ipsum dolor</p>
+                <div class="content__composition-right-ingredient">
+                    <img class="content__composition-background" src="img/packings-of-pills-and-capsules-of-medicines.jpg" alt="background">
+                </div>
+                <p>Lorem ipsum dolor</p>
+                <div class="content__composition-right-ingredient">
+                    <img class="content__composition-background" src="img/packings-of-pills-and-capsules-of-medicines.jpg" alt="background">
+                </div>
+                <p>Lorem ipsum dolor</p>
+            </div>
+        </div>
+        <button class="content__composition-button">
+            <a href="#down">Заказать</a>
+        </button>
+        <div class="content__wrapper">
+            <div class="content__slider-container" id="slider-container"></div>
+            <button id="prev">&lt;</button>
+            <button id="next">&gt;</button>
+        </div>
+
+        <div class="content__description">
+            <div class="content__description-container">
+                <div class="content__description-image">
+                    <img class="content__description-image-doctor" src="img/doctor.png" alt="">
+                </div>
+                <div class="content__description-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus, debitis quibusdam vel facere suscipit.
+                </div>
+            </div>
+            <ul class="content__description-list">
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+                <li>Lorem ipsum dolor</li>
+            </ul>
+            <button class="content__description-button">
+                <a href="#down">Заказать</a>
+            </button>
+        </div>
+
+        <div id="time-remainer">
+            Срок действия скидки заканчивается через 
+            <span id="deadline-timer">05:00</span> 
+            <span id="min-or-sec">минут</span>!
+        </div>
+
+        <form action="#" id="form" name="form" class="form">
+            <h3>Форма заказа</h3>
+            <div class="form__input">
+                <input id="name" type="text" class="input" type="text" placeholder="Введите имя"/>
+                <label for="name">Например: Иван</label>
+            </div>
+            <div class="form__input">
+                <input class="input" 
+                       id="phone" 
+                       name="phone" 
+                       type="text" 
+                       placeholder="Введите телефон"
+                       data-reg="^((\+7|7|8)+([0-9]){10})$">
+                <label for="email">Например:+79000000000</label>       
+            </div>
+            <div class="form__price">
+                <div class="form__price-info">
+                    <div class="form__price-info-all">
+                        <div class="form__price-info-old">1500 рублей</div>
+                        <div class="form__price-info-new">1000 рублей</div>
+                    </div>
+                    <button id="down" class="form__button">Заказать</button>
+                </div>
+                <div class="form__image">
+                    <img class="form__image-tablets" src="img/prod.png" alt="tablets">
+                </div>
+            </div>
+        </form>
+          <script src="script.js"></script>
+    </main>
+</body>
+</html>
